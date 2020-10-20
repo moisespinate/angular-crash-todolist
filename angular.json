@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-crash-todolist"
+    }
+  },
+  "defaultProject": "angular-crash-todolist",
+  "cli": {
+    "analytics": "cdcb3d34-45dd-49ea-86db-17d1d7ba9149"
+  }
 }
