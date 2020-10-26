@@ -28,7 +28,7 @@ export class TodoItemComponent implements OnInit {
     return classes;
   }
 
-  onToggle(todo) {
+  onToggle(todo):void {
     // Toggle in UI
     todo.completed = !todo.completed;
     // Toggle Service
@@ -38,7 +38,7 @@ export class TodoItemComponent implements OnInit {
   // We use EventEmitter and Output to create an event propagation to the
   // parent component for catch this generated event on the parent compoent and delete
   // all the Todos that are loaded on the todo.component. It's similar to the $emit of VueJS
-  onDelete(todo) {
+  onDelete(todo): void {
     this.deleteTodo.emit(todo);
   }
 }
